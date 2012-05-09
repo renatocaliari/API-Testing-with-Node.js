@@ -6,7 +6,7 @@ var vows = require('vows'),
 	{ 
 		'Catalog':{
 			topic:{},
-			'GET http://api.staging.netmovies.com.br/account/v1.1/user/login/': {
+			'GET http://www.example.com': {
 				topic: function(parentTopic){
 					client.get('http://api.example.com').on('complete', this.callback );
 				},
@@ -14,7 +14,7 @@ var vows = require('vows'),
 					result.should.have.status(200);
 				}
 			},
-			'POST http://api.staging.netmovies.com.br/account/v1.1/user/login/':{	
+			'POST http://www.example.com':{	
 				topic: function(parentTopic){
 					client.post('http://api.example.com', {data: {param1: "value1"}}).on('complete', this.callback );
 				},
