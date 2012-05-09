@@ -1,4 +1,5 @@
-Test API using Node and Vows
+API Testing using Node.js.
 ==================================
 
-This example shows how to test the status code from an api using Node with Vows.
+Those examples shows how to test an API using Mocha and Vows.
+
