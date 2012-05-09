@@ -1,5 +1,1 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-
-# Project property files
+node_modules
