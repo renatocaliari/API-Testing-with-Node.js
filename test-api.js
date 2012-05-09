@@ -1,10 +1,11 @@
 var vows = require('vows'),
-	api = require('./lib/util').api;
+	it = require('./lib/util').it;
 
 	vows.describe('Staging v1.1').addBatch(
 	{ 
 		'Catalog':{
-			'GET http://api.example.com':	api.getStatus(200),
+			'GET http://api.example.com':	it.respondsWith(200),
+			'POST http://api.example.com':	it.withParams({param1: "value1"}).respondsWith(200)
 		}
 	}
 	).run();
